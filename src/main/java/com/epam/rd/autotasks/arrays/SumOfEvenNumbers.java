@@ -2,15 +2,15 @@ package com.epam.rd.autotasks.arrays;
 
 public class SumOfEvenNumbers {
     public static int sum(int[] array){
-        int sum =0;
-        if (array == null || array.length == 0){
-            return sum;
+        int sumOfArrayNumbers = 0;
+        if (array == null){
+            return sumOfArrayNumbers;
         }
-        for (int var: array) {
-            if (var%2 == 0){
-                sum += var;
+        for (int number : array) {
+            if (number %2 == 0){
+                sumOfArrayNumbers += number;
             }
         }
-        return sum;
+        return sumOfArrayNumbers;
     }
 }
